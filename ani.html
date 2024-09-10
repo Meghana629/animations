@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse; 
+            padding:20px;
+        }
+        table{
+        
+            text-align: center;
+        }
+        .one:hover{
+            animation-name: roll-right;
+            animation-duration: 3s;
+            animation-delay:1s ;
+            animation-direction:alternate ;
+            animation-timing-function:linear;
+            animation-iteration-count: 2;
+        }
+        @keyframes roll-right{
+            from{
+                transform: translateX(100px)rotate(0deg);
+            }
+            to{
+                transform: translateX(400px)rotate(360deg);
+            }
+        }
+        .two:hover{
+            animation-name: roll-left;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-direction:alternate;
+            animation-timing-function: ease;
+            animation-iteration-count: 2;
+            
+        
+        }
+        @keyframes roll-left{
+            from{
+                transform: translateX(-100px)rotate(90deg);
+            }
+            to{
+                transform: translateX(-400px)rotate(360deg);
+            }
+        }
+        
+        .three:hover{
+            animation-name: move-vertical;
+            animation-duration: 3s;
+            animation-delay:1s ;
+            animation-direction:alternate;
+            animation-timing-function:ease;
+            animation-iteration-count: 2;
+            
+        }
+        @keyframes move-vertical{
+           from{
+            transform: translateY(100px)rotate(0deg);
+
+           }
+           to{
+            transform: translateY(400px)rotate(360deg);
+           }
+
+        }
+        
+    </style>
+</head>
+<body>
+    <table border="1" cellspacing="0"cellpadding="20px"style="width: 1300px;">
+    
+            <tr>
+                <td>image1</td>
+                <td><img class="one" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAlpQBahpDZSNYA6W-nCeQlpF_RcoYkAbdSg&s"height="200px" width="200px"> </td>
+            </tr>
+            <tr>
+                <td>image2</td>
+                <td><img class="two" src="https://static.vecteezy.com/system/resources/thumbnails/038/023/298/small_2x/ai-generated-beautiful-student-indian-girl-with-backpack-and-glasses-in-the-park-autumn-education-learning-photo.jpg" height="200px" width="200px"></td>
+            </tr>
+            <tr>
+                <td>image3</td>
+                <td><img class="three" src="https://static.toiimg.com/thumb/msid-92495005,width-400,resizemode-4/92495005.jpg" height="200px" width="200px">
+                 </td>
+            </tr>
+        
+    </table>
+
+    
+    
+</body>
+</html>
